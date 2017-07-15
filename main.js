@@ -23,10 +23,10 @@ $(document).ready(function() {
 	var animation = 'animated bounceIn';
 	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 	generateRandomQuote();
-	
+
 	$('button[name=generate]').on('click', function(){
 		generateRandomQuote();
-		$('blockquote').addClass(animation).one(animationEnd, function(){
+		$('blockquote p').addClass(animation).one(animationEnd, function(){
 			$(this).removeClass(animation);
 		});
 	});
@@ -43,5 +43,3 @@ function tweetIt() {
 	var win = window.open('https://twitter.com/intent/tweet?text=' + quote, '_blank');
 	win.focus();
 }
-
- 

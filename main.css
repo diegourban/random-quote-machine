@@ -1,19 +1,42 @@
 body {
 	font-family: 'Quicksand', sans-serif;
-}
-
-section {
 	text-align: center;
 }
 
-.row {
-	padding: 30px;
+h1 {
+	font-size: 1.5em;
 }
 
 blockquote {
-	font-size: 3em;
+	font-size: 1em;
 }
 
-footer {
-	text-align: center;
+@media (min-width: 750px) {
+  h1 {
+    font-size: 2em;
+  }
+
+	blockquote {
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: 970px) {
+  h1 {
+    font-size: 3em;
+  }
+
+	blockquote {
+		font-size: 2em;
+	}
+}
+
+@media (min-width: 1170px) {
+  h1 {
+    font-size: 6em;
+  }
+
+	blockquote {
+		font-size: 3em;
+	}
 }
